@@ -1,6 +1,8 @@
-# router-app
+# Noroff vue app
 
-> A Vue.js project
+> Noroff student asignment
+
+This app uses the API http://www.recipepuppy.com/
 
 ## Build Setup
 
