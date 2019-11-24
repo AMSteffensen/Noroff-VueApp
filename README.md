@@ -3,6 +3,8 @@
 > Noroff student asignment
 
 This app uses the API http://www.recipepuppy.com/
+Demo at: https://noroff-vueapp.netlify.com
+
 
 ## Build Setup
 
