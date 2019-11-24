@@ -13,8 +13,8 @@ export default new Router({
       component: HomePage
     },
      {
-       path: '/recipe',
-       name: 'recipe',
+       path: '/recipe/:id',
+       name: 'Recipe',
        component: RecipeComponent
      }
   ]
