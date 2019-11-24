@@ -1,7 +1,9 @@
 <template>
 <div class="container">
-  <input type="text" />
-  <button class="btn btn-primary" type="button"> Search </button>
+  <div class="input-group">
+    <input type="text" class="form-control" v-model="search" placeholder="Search..."/>
+  <button class="btn btn-secondary" type="button" v-on:click="getRecipe()"> Search </button>
+  </div>
   <article class="card" v-for="recipe in recipes" :key="recipe.title">
       <div class="card-body">
         <h1>{{ recipe.title }}</h1>
@@ -21,7 +23,8 @@ export default {
   data() {
     return {
       recipes: [],
-      errors: []
+      errors: [],
+      search: []
     }
   },
   created() {
@@ -30,6 +33,13 @@ export default {
     .catch(e => {
       this.errors.push(e)
     })
+  },
+  methods: {
+    getRecipe() {
+      axios.get(url + apiUrl+ '?i=' + this.search)
+      .then(response => { this.recipes = response.data.results})
+      .catch(e=>{this.errors.push(e)})
+    }
   }
 }
 </script> 
