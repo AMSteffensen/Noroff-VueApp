@@ -1,9 +1,10 @@
-# Noroff vue app
+> Noroff vue app
 
 # Noroff student asignment
 
-## This app uses the API http://www.recipepuppy.com/
-## Demo at: https://noroff-vueapp.netlify.com
+> This app uses the API http://www.recipepuppy.com/
+> Demo at: https://noroff-vueapp.netlify.com
+
 ## TODO: 
 1. Add component for viewing single recipies
 2. Show user when no results was found.
