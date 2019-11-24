@@ -4,7 +4,10 @@
 
 This app uses the API http://www.recipepuppy.com/
 Demo at: https://noroff-vueapp.netlify.com
-
+TODO:
+-Add component for viewing single recipies
+-Show user when no results was found.
+-Animate cards
 
 ## Build Setup
 
